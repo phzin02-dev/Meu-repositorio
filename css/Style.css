@@ -3,11 +3,10 @@
 }
 
 body {
-   body {
     font-family: Arial, sans-serif;
     margin: 0;
     background-color: #000;
-   background-image: url("../img/fundo.png");
+    background-image: url("../img/fundo.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -15,8 +14,6 @@ body {
     color: #222;
     line-height: 1.6;
 }
-}
-
 header {
     background-color: #111827;
     color: white;
