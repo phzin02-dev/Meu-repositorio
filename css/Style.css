@@ -3,11 +3,18 @@
 }
 
 body {
+   body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f4f4f4;
+    background-color: #000;
+    background-image: url("../img/fundo.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     color: #222;
     line-height: 1.6;
+}
 }
 
 header {
