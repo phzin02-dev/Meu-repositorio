@@ -12,81 +12,136 @@
 
 <body>
 
-    <header>
-        <h1>Pedro Henrique Pereira de Souza</h1>
-        <p>Estudante de Informática | Desenvolvedor em formaçãoInteressado em programação, 
-            desenvolvimento de jogos e tecnologia.</p>
+    <header class="site-header">
+        <a class="brand" href="#inicio" aria-label="Página inicial de Pedro Henrique">
+            <span class="brand-mark">PH</span>
+            <span>Pedro Henrique</span>
+        </a>
 
-        <nav>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+
+        <nav id="site-nav" class="site-nav" aria-label="Navegação principal">
+            <a class="active" href="#inicio">Início</a>
             <a href="#sobre">Sobre mim</a>
             <a href="#projetos">Projetos</a>
             <a href="#habilidades">Habilidades</a>
-            <a href="#contato">Contato</a>
+            <a class="nav-cta" href="#contato">Contato</a>
         </nav>
     </header>
 
-    <main>
-
-        <section id="sobre">
-            <h2>Sobre mim</h2>
-
-            <p>
-               Olá! Sou estudante de informática e tenho interesse
-        em programação e desenvolvimento de jogos.
-            </p>
+    <main class="home-page">
+        <section id="inicio" class="hero container">
+            <div class="hero-copy">
+                <p class="eyebrow">Portfólio pessoal <span></span> 2026</p>
+                <h1>Construindo ideias com <em>código</em> e curiosidade.</h1>
+                <p class="hero-text">Sou Pedro Henrique, estudante de informática e desenvolvedor em formação. Aqui compartilho meu aprendizado, meus projetos e os próximos passos da minha jornada na tecnologia.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projetos">Ver meus projetos <span aria-hidden="true">↗</span></a>
+                    <a class="text-link" href="#sobre">Conhecer minha história <span aria-hidden="true">→</span></a>
+                </div>
+            </div>
+            <div class="hero-card" aria-label="Resumo do perfil">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="profile-initials">PH</div>
+                <p class="card-label">Disponível para aprender</p>
+                <p class="card-title">Estudante de<br>Informática</p>
+                <div class="card-footer"><span class="status-dot"></span> Explorando novas possibilidades</div>
+            </div>
         </section>
 
-
-        <section id="projetos">
-            <h2>Meus Projetos</h2>
-
-            <article>
-                <h3>Meu primeiro projeto</h3>
-
-                <p>
-                    Projeto desenvolvido durante o curso de informática.
-                </p>
-
-                <p>
-                    Tecnologias: HTML e CSS
-                </p>
-            </article>
-
+        <section class="quick-links container" aria-label="Explore o portfólio">
+            <a class="quick-link" href="#sobre"><span class="quick-number">01</span><span><strong>Sobre mim</strong><small>Minha história e objetivos</small></span><span class="arrow">↗</span></a>
+            <a class="quick-link" href="#projetos"><span class="quick-number">02</span><span><strong>Projetos</strong><small>O que estou criando</small></span><span class="arrow">↗</span></a>
+            <a class="quick-link" href="#habilidades"><span class="quick-number">03</span><span><strong>Habilidades</strong><small>Ferramentas que estudo</small></span><span class="arrow">↗</span></a>
         </section>
 
-
-        <section id="habilidades">
-            <h2>Minhas Habilidades</h2>
-
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Git</li>
-                <li>GitHub</li>
-            </ul>
+        <section id="sobre" class="page-main container">
+            <div class="page-intro">
+                <p class="page-kicker">01 / Quem sou</p>
+                <h1>Prazer, eu sou o <em>Pedro.</em></h1>
+                <p>Um estudante de informática descobrindo, todos os dias, novas formas de transformar curiosidade em coisas que funcionam.</p>
+            </div>
+            <div class="about-grid">
+                <div>
+                    <h2>Minha história</h2>
+                    <p>Olá! Sou estudante de informática e tenho interesse em programação, desenvolvimento de jogos e tecnologia. Comecei a estudar para entender como as ideias saem do papel e ganham vida através do código.</p>
+                    <p>Gosto de aprender na prática, experimentar ferramentas novas e evoluir um projeto a cada versão. Este portfólio acompanha exatamente esse processo.</p>
+                    <p class="quote">“A melhor parte de aprender é perceber que sempre existe um próximo projeto para criar.”</p>
+                </div>
+                <div class="facts" aria-label="Informações sobre Pedro">
+                    <div class="fact"><span class="fact-number">01</span><span class="fact-label">Estudante de<br>Informática</span></div>
+                    <div class="fact"><span class="fact-number">02</span><span class="fact-label">Foco em<br>programação</span></div>
+                    <div class="fact"><span class="fact-number">03</span><span class="fact-label">Curioso por<br>games e tecnologia</span></div>
+                    <div class="fact"><span class="fact-number">04</span><span class="fact-label">Sempre pronto<br>para aprender</span></div>
+                </div>
+            </div>
         </section>
 
-
-        <section id="contato">
-            <h2>Contato</h2>
-
-            <p>
-                GitHub: <a href="https://github.com/phzin02-dev">
-                    Meu GitHub
-                </a>
-            </p>
-
-            <p>
-                E-mail: Phzin8601.a@gmail.com
-            </p>
+        <section id="projetos" class="page-main container">
+            <div class="page-intro">
+                <p class="page-kicker">02 / O que estou criando</p>
+                <h1>Ideias em <em>construção.</em></h1>
+                <p>Cada projeto é uma oportunidade de praticar, testar uma ideia e aprender algo novo no caminho.</p>
+            </div>
+            <div class="section-heading"><h2>Projetos selecionados</h2><p>Em breve, mais experiências por aqui.</p></div>
+            <div class="project-grid">
+                <article class="project-card"><div><span class="project-number">PROJETO 01</span><h2>Meu primeiro site</h2><p>Uma página construída durante o curso de informática para praticar estrutura e estilo na web.</p></div><div class="tags"><span>HTML</span><span>CSS</span></div></article>
+                <article class="project-card"><div><span class="project-number">PROJETO 02</span><h2>Próximo experimento</h2><p>Um espaço reservado para o próximo desafio: transformar uma nova ideia em uma experiência digital.</p></div><div class="tags"><span>Em breve</span><span>Explorando</span></div></article>
+                <article class="project-card"><div><span class="project-number">PROJETO 03</span><h2>Jogo em estudo</h2><p>Investigando possibilidades de criar experiências interativas e dar vida a pequenos universos.</p></div><div class="tags"><span>Games</span><span>Ideias</span></div></article>
+            </div>
         </section>
 
+        <section id="habilidades" class="page-main container">
+            <div class="page-intro">
+                <p class="page-kicker">03 / O que estudo</p>
+                <h1>Ferramentas para <em>criar.</em></h1>
+                <p>Conhecimentos que venho construindo com prática, curiosidade e muitos testes pelo caminho.</p>
+            </div>
+            <div class="skills-grid">
+                <article class="skill"><span class="skill-icon">&lt;/&gt;</span><h2>HTML</h2><p>Estruturo páginas semânticas, organizadas e acessíveis.</p></article>
+                <article class="skill"><span class="skill-icon">{ }</span><h2>CSS</h2><p>Crio interfaces responsivas com atenção aos detalhes visuais.</p></article>
+                <article class="skill"><span class="skill-icon">JS</span><h2>JavaScript</h2><p>Estudo como tornar páginas mais dinâmicas e interativas.</p></article>
+                <article class="skill"><span class="skill-icon">GIT</span><h2>Git</h2><p>Organizo versões do projeto e acompanho minha evolução.</p></article>
+                <article class="skill"><span class="skill-icon">GH</span><h2>GitHub</h2><p>Compartilho meu código e mantenho meus projetos públicos.</p></article>
+                <article class="skill"><span class="skill-icon">+</span><h2>Aprendizado</h2><p>Minha habilidade principal: continuar descobrindo.</p></article>
+            </div>
+        </section>
+
+        <section id="contato" class="page-main container">
+            <div class="page-intro">
+                <p class="page-kicker">04 / Fale comigo</p>
+                <h1>Vamos criar algo <em>juntos?</em></h1>
+                <p>Tem uma ideia, uma oportunidade ou só quer trocar uma ideia sobre tecnologia? Minha caixa de entrada está aberta.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-details">
+                    <div class="contact-item"><small>GitHub</small><a href="https://github.com/phzin02-dev" target="_blank" rel="noreferrer">github.com/phzin02-dev</a></div>
+                    <div class="contact-item"><small>E-mail</small><a href="mailto:Phzin8601.a@gmail.com">Phzin8601.a@gmail.com</a></div>
+                    <div class="contact-item"><small>Localização</small><span>Brasil</span></div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <label for="name">Seu nome</label>
+                    <input id="name" name="name" type="text" placeholder="Como posso te chamar?" required>
+                    <label for="email">Seu e-mail</label>
+                    <input id="email" name="email" type="email" placeholder="voce@email.com" required>
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" placeholder="Escreva sua mensagem..." required></textarea>
+                    <button class="button button-primary" type="submit">Enviar mensagem <span aria-hidden="true">↗</span></button>
+                    <p id="form-status" role="status"></p>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>© 2026 Pedro Souza</p>
+        <div class="container footer-content">
+            <p>© <span class="current-year">2026</span> Pedro Souza</p>
+            <a href="#contato">Vamos conversar →</a>
+        </div>
     </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 
